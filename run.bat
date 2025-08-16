@@ -1,2 +1,3 @@
 @echo off
-python genshin.py
+python %~dp0\genshin.py
+pause
