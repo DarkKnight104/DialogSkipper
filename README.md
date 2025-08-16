@@ -1,4 +1,23 @@
-#Python script used to advance automatically in dialog in the game Genshin Impact
-##It utilize the hide text button to detect if a dialog is currently active and uses the spacebar and f key so that you can use your mouse freely
+# Genshin Dialogue Skipper
 
-##Inspired by 1hubert genshin-dialogue-autoskip
+A simple Python script that automatically skips through dialogues in **Genshin Impact**.  
+It listens for a hotkey (`F8`) to toggle auto-skipping on and off.  
+
+---
+
+## ✨ Features
+- Toggles on/off with **F8**
+- Detects if the Genshin Impact window is active
+- Supports English and Italian UI detection
+- Skips dialogues automatically by pressing:
+  - **Space** (to advance dialogue text)
+  - **F** (to select dialogue options)
+- Stores settings in a `genshin.json` configuration file
+
+---
+
+## 📦 Requirements
+Install dependencies with:
+
+```bash
+pip install pynput pyautogui pygetwindow
