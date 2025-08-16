@@ -13,6 +13,7 @@ It listens for a hotkey (`F8`) to toggle auto-skipping on and off.
   - **Space** (to advance dialogue text)
   - **F** (to select dialogue options)
 - Stores settings in a `genshin.json` configuration file
+- If you change screen resolution or game lenguage delete the json file
 
 ---
 
