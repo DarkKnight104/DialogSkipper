@@ -85,14 +85,12 @@ def on_press(key):
 def in_dialog():
     global x,y,config
     if pyautogui.pixelMatchesColor(x,y,(59, 67, 84), tolerance=5):
-            print("Dialog")
             return True
-    print("Not Dialog")
     return False
 
 def game_focused():
     window = gw.getActiveWindow()
-    if window and window.title == "Genshin Impact" or "原神" or "원신" or "原神":
+    if window.title == "Genshin Impact" or "原神" or "원신" or "原神":
         return True
     print(window.title)
     return False
@@ -110,7 +108,7 @@ def dialog_option():
 def dialog_skipper():
     global dialog_flag
     while True:
-        t = (random.randint(1,50))/100
+        t = (random.randint(1,10))/100
         if dialog_flag and game_focused():
             if in_dialog():
                 text_skip()
